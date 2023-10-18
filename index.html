@@ -3,13 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
-    <link rel="stylesheet" href="./style.css">
-    <title>Flip login Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>Log in page(17/10)</h1>
-
-    <center><a href="./Html/HTML LOGIN HTML.html"><button type="button">Log In Page</button></a></center>
+    <div class="wrapper">
+        <form action="">
+            <h1>LOGIN PAGE</h1>
+            <div  class="input-box">
+                <input type="text" placeholder="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div  class="input-box">
+                <input type="password" placeholder="password" required>
+                <i class='bx bxs-lock-alt' ></i>
+            </div>
+            <div  class="remember-forgot">
+                <label><input type="checkbox">remember me</label>
+                <a href="#">forgot password</a>
+            </div>
+            <button  type="submit" class="btn">LOGIN</button>
+            <div class="register-link">
+                <p>Dont Have An Account? <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
+   
