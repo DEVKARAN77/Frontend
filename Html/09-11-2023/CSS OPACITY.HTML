@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      img {
+        opacity: 0.5;
+      }
+
+      div.EX1 img {
+        opacity: 0.5;
+      }
+
+      div.EX1 img:hover {
+        opacity: 1;
+      }
+      div.background {
+        background: url(../IMG/WHITE\ ROSE.jpeg) repeat;
+        border: 2px solid black;
+      }
+
+      div.transbox {
+        margin: 30px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+      }
+
+      div.transbox p {
+        margin: 5%;
+        font-weight: bold;
+        color: #000000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Image Transparency</h1>
+    <p>
+      The opacity property specifies the transparency of an element. The lower
+      the value, the more transparent:
+    </p>
+
+    <p>Image with 50% opacity:</p>
+    <img src="../img/FOREST.JPG" alt="Forest" width="170" height="100" />
+    <hr />
+    <hr />
+    <h1>Image Transparency</h1>
+    <p>
+      The opacity property is often used together with the :hover selector to
+      change the opacity on mouse-over:
+    </p>
+    <div class="EX1">
+      <img src="../IMG/FOREST.JPG" alt="Forest" width="170" height="100" />
+      <img src="../IMG/MOUNTAIN.JPG" alt="Mountains" width="170" height="100" />
+      <img src="../IMG/ITALY.JPG" alt="Italy" width="170" height="100" />
+    </div>
+    <hr />
+    <hr />
+    <div class="background">
+      <div class="transbox">
+        <p>This is some text that is placed in the transparent box.</p>
+      </div>
+    </div>
+  </body>
+</html>
+
