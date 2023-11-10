@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a[target="_blank"] {
+        background-color: gold;
+      }
+      [title~="flower"] {
+        border: 5px solid brown;
+      }
+      [class|="top"] {
+        background: goldenrod;
+      }
+      .EX1[class^="top"] {
+        background: goldenrod;
+      }
+      .EX2[class$="EX2"] {
+        background: goldenrod;
+      }
+      .EX3[class*="te"] {
+        background: goldenrod;
+      }
+    </style>
+  </head>
+  <body>
+    <center><h2>CSS [attribute="value"] Selector</h2></center>
+    <p>The link with target="_blank" gets a yellow background:</p>
+
+    <a href="https://www.w3schools.com">w3schools.com</a>
+    <a href="http://www.disney.com" target="_blank">disney.com</a>
+    <a href="http://www.wikipedia.org" target="_top">wikipedia.org</a>
+    <hr />
+    <hr />
+    <center><h2>CSS [attribute~="value"] Selector</h2></center>
+    <p>
+      All images with the title attribute containing the word "flower" get a
+      yellow border.
+    </p>
+
+    <img
+      src="../IMG/KLEMATIC FLOWER.jpg"
+      title="klematis flower"
+      width="150"
+      height="113"
+    />
+    <img src="../IMG/FLOWER.gif" title="flower" width="224" height="162" />
+    <img src="../IMG/TREE.gif" title="tree" width="200" height="358" />
+    <hr />
+    <hr />
+    <center><h2>CSS [attribute|="value"] Selector</h2></center>
+    <h1 class="top-header">Welcome</h1>
+    <p class="top-text">Hello world!</p>
+    <p class="topcontent">Are you learning CSS?</p>
+    <hr />
+    <hr />
+    <center><h2>CSS [attribute^="value"] Selector</h2></center>
+
+    <center><h1 class="top-header EX1">Welcome</h1></center>
+    <p class="top-text EX1">Hello world!</p>
+    <p class="topcontent EX1">Are you learning CSS?</p>
+    <hr />
+    <hr />
+    <center><h2>CSS [attribute$="value"] Selector</h2></center>
+
+    <div class="EX2">The first div element.</div>
+    <div class="">The second div element.</div>
+    <div class="EX2">The third div element.</div>
+    <p class="EX2">This is some text in a paragraph.</p>
+    <hr />
+    <hr />
+    <center><h2>CSS [attribute*="value"] Selector</h2></center>
+
+    <div class="first_test EX3">The first div element.</div>
+    <div class="second EX3">The second div element.</div>
+    <div class="my-test EX3">The third div element.</div>
+    <p class="mytest EX3">This is some text in a paragraph.</p>
+  </body>
+</html>
+
