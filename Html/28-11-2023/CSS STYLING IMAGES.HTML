@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        margin: 25px;
+        background-color: white;
+      }
+      div.ex1 {
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+      }
+      div.ex2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      div.polaroid {
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+        margin-bottom: 25px;
+      }
+
+      div.container {
+        text-align: center;
+        padding: 10px 20px;
+      }
+      img.ex3 {
+        width: 33%;
+        height: auto;
+        float: left;
+        max-width: 235px;
+      }
+
+      .blur {
+        filter: blur(4px);
+      }
+      .brightness {
+        filter: brightness(250%);
+      }
+      .contrast {
+        filter: contrast(180%);
+      }
+      .grayscale {
+        filter: grayscale(100%);
+      }
+      .huerotate {
+        filter: hue-rotate(180deg);
+      }
+      .invert {
+        filter: invert(100%);
+      }
+      .opacity {
+        filter: opacity(50%);
+      }
+      .saturate {
+        filter: saturate(7);
+      }
+      .sepia {
+        filter: sepia(100%);
+      }
+      .shadow {
+        filter: drop-shadow(8px 8px 10px green);
+      }
+    </style>
+  </head>
+  <body>
+    <center><h2>Thumbnail Image</h2></center>
+
+    <p>Use the border property to create thumbnail images:</p>
+
+    <div class="ex1">
+      <img src="../img/PARIS CITY.jpeg" alt="PARIS" style="width: 150px" />
+    </div>
+    <hr />
+    <hr />
+    <center><h2>Center an Image</h2></center>
+
+    <p>
+      To center an image, set left and right margin to auto, and make it into a
+      block element.
+    </p>
+    <div class="ex2">
+      <img src="../img/PARIS CITY.jpeg" alt="PARIS" style="width: 50%" />
+    </div>
+    <hr />
+    <hr />
+    <center><h2>Responsive Polaroid Images / Cards</h2></center>
+
+    <div class="polaroid">
+      <img src="../img/MOUNTAIN.JPG" alt="MOUNTAIN" style="width: 100%" />
+      <div class="container">
+        <p>Cinque Terre</p>
+      </div>
+    </div>
+
+    <div class="polaroid">
+      <img src="../img/TREE.gif" alt="TREE" style="width: 25%" />
+      <div class="container">
+        <p>Northern Lights</p>
+      </div>
+    </div>
+    <hr />
+    <hr />
+    <h2>Image Filters</h2>
+
+    <p>
+      <strong>Note:</strong> The filter property is not supported in Internet
+      Explorer or Edge 12.
+    </p>
+
+    <img src="../img/PINEAPPLE.jpeg" alt="Pineapple" width="300" height="300" />
+    <img
+      class="blur"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+    <img
+      class="brightness"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+    <img
+      class="contrast"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+    <img
+      class="grayscale"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+    <img
+      class="huerotate"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+    <img
+      class="invert"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+    <img
+      class="opacity"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+    <img
+      class="saturate"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+    <img
+      class="sepia"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+    <img
+      class="shadow"
+      src="../img/PINEAPPLE.jpeg"
+      alt="Pineapple"
+      width="300"
+      height="300"
+    />
+  </body>
+</html>
+

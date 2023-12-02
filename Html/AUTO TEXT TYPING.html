@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <lang="en">
+  <head>
+   
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link rel="stylesheet" href="">
+          <title>Text Typing Animation</title>
+         
+         <style>
+      @import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@600;700;800;900&display=swap');
+
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+      }
+
+      .container{
+          width: 100vw;
+          height: 100vh;
+          background-color: #2b323c;
+          color: #fff;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+
+      .container h1{
+          font-size: 80px;
+          font-weight: 600;
+      }
+
+      span{
+          color: #e63946;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>I'm <span class="auto-type"></span> </h1>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings:["Devkaran", "Developer", "Gamer"],
+            typeSpeed:150,
+            backSpeed:150,
+            loop:true
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .grid-container1 {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: 80px 200px;
+        gap: 10px;
+        background-color: cadetblue;
+        padding: 10px;
+      }
+
+      .grid-container1 > div {
+        background-color: cornflowerblue;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+      .grid-container2 {
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: 50px 50px 50px;
+        gap: 10px;
+        background-color: cadetblue;
+        padding: 10px;
+      }
+
+      .grid-container2 > div {
+        background-color: cornflowerblue;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+      .grid-container3 {
+        display: grid;
+        height: 400px;
+        align-content: space-between;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        background-color: cadetblue;
+        padding: 10px;
+      }
+
+      .grid-container3 > div {
+        background-color: cornflowerblue;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>The grid-template-rows Property</h1>
+
+    <div class="grid-container1">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+
+    <p>
+      Use the <em>grid-template-rows</em> property to specify the size (height)
+      of each row.
+    </p>
+    <hr />
+    <hr />
+    <h1>The justify-content Property</h1>
+
+    <p>
+      Use the <em>justify-content</em> property to align the grid inside the
+      container.
+    </p>
+
+    <p>
+      The value "space-between" will give the columns equal amount of space
+      between them:
+    </p>
+
+    <div class="grid-container2">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+    <hr />
+    <hr />
+    <h1>The align-content Property</h1>
+
+    <p>
+      Use the <em>align-content</em> property to vertically align the grid
+      inside the container.
+    </p>
+
+    <p>
+      The value "space-between" will give the rows equal amount of space between
+      them:
+    </p>
+
+    <div class="grid-container3">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+  </body>
+</html>
+
